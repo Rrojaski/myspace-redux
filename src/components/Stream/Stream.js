@@ -7,6 +7,17 @@ import styles from "./Stream.module.scss";
 import Paragraph from "../Paragraph/Paragraph";
 import Link from "../../components/Link/Link";
 
+
+// Media
+import tom from '../../media/tom.jpg';
+import bill from '../../media/bill.jpg';
+import queen from '../../media/queen.jpg';
+import trump from '../../media/trump.jpg';
+import bush from '../../media/bush.jpg';
+import obama from '../../media/obama.jpg';
+
+const people = [obama, bush, trump, queen, bill];
+
 class Stream extends Component {
   componentWillMount() {
     this.props.fetchPosts();
@@ -19,15 +30,26 @@ class Stream extends Component {
     }
   }
 
-  componentDidMount() {}
+  componentDidMount() { }
   render() {
     const postItems = this.props.posts.map(x => {
-      return (
-        <div className={`${styles.stream__post}`} key={x.id}>
-          <h3>{x.title}</h3>
-          <p>{x.body}</p>
-        </div>
-      );
+      if (x.id > 100) {
+        return (
+          <div className={`${styles.stream__post}`} key={x.id}>
+            <img className={`${styles.stream__img}`} src={tom} />
+            <h3>{x.title}</h3>
+            <p>{x.body}</p>
+          </div>
+        )
+      } else {
+        return (
+          <div className={`${styles.stream__post}`} key={x.id}>
+            <img className={`${styles.stream__img}`} src={people[Math.floor(Math.random() * 5)]} />
+            <h3>{x.title}</h3>
+            <p>{x.body}</p>
+          </div>
+        );
+      }
     });
     return (
       <Fragment>
@@ -38,7 +60,7 @@ class Stream extends Component {
           </div>
           <div className={`${styles.stream__status}`}>{postItems}</div>
         </div>
-      </Fragment>
+      </Fragment >
     );
   }
 }

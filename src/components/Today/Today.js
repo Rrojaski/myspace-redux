@@ -15,6 +15,7 @@ class Today extends Component {
     console.log(`recieved ${h} and ${m}`);
     let sun = "AM";
     let newH = "";
+    let newM = "";
     if (h > 11) {
       sun = "PM";
       switch (h) {
@@ -57,9 +58,16 @@ class Today extends Component {
         default:
           newH = "error";
       }
+    } else {
+      newH = h;
+    }
+    if (m.length < 2) {
+      newM = "0" + m;
+    } else {
+      newM = m;
     }
 
-    const res = newH + ":" + m + " " + sun;
+    const res = newH + ":" + newM + " " + sun;
     this.setState({
       time: res
     });

@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.Header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: $white;
+
+  box-shadow: 0 1.7rem 1rem -1rem $grey;
+  
+}
+.header__top {
+
+  width: 100%;
+  background-color: $color-primary;
+  padding: 1.5rem 0rem;
+}
+.header__bottom {
+
+  width: 100%;
+  background-color: $color-secondary;
+  padding: 1rem 0rem;
+}
+
+
+
+

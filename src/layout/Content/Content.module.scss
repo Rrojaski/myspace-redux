@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+
+.Content {
+  width: 100%;
+  height: 110vh;
+  margin-top: 2rem;
+  @include respond(tab-land) {
+    padding: 0 2rem;
+  }
+}
+
+
+
+
+

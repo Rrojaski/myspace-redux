@@ -1,0 +1,8 @@
+@import "../../variables.scss";
+
+.Link {
+  display: inline-block;
+  color: inherit;
+  @include reset-anchor;
+  font-size: $font-sm;
+}

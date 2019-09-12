@@ -1,0 +1,36 @@
+@import "../../variables.scss";
+
+.Search {
+  width: 100%;
+  white-space: nowrap;
+  line-height: $line-height-sm;
+  font-size: $font-sm;
+}
+
+
+.search__input__radio,
+.search__label,
+.search__input__text,
+.search__button {
+  display: inline-block;
+}
+.search__label {
+  margin-right: 1rem;
+}
+.search__input__radio {
+  margin-right: 1rem;
+}
+.search__input__text {
+  padding: 0 .5rem;
+  height: 2rem;
+  border: 1px solid rgba($black, .3);
+  margin-right: 2rem;
+};
+.search__button {
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  padding: .5rem 1rem;
+  color: $color-primary;
+  background-color: $white;
+}

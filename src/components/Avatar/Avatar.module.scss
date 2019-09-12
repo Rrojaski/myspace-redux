@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+.Avatar {
+  padding: 1rem;
+  width: 100%;
+  background-color: $grey-light;
+  border-radius: $border-radius-default;
+  margin-bottom: 1.5rem;
+
+}
+.avatar__img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  outline: 2px solid $white;
+  margin-bottom: 1.5rem;
+}

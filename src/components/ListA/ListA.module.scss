@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+.ListA {
+  text-align: center;
+  & > :not(:last-child) {
+    margin-right: 1rem;
+    padding-right: 1rem;
+  
+      border-right: 1px solid $white;
+    
+  }
+}
+
+
+.black {
+  margin: 0 auto;
+  & > :first-child {
+    padding-left: 1rem;
+  }
+  & > :not(:last-child) {
+    border-right: 1px solid $black;
+  }
+}

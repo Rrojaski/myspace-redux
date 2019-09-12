@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+
+.Paragraph {
+  line-height: $line-height-sm;
+  font-size: $font-sm;
+  display: inline-block;
+
+  & > bold {
+    
+  }
+}
+
+.white {
+  color: $white;
+}
+
+.xl {
+  font-size: $font-lg;
+}
+.lg {
+  font-size: $font-md;
+  font-weight: $font-weight-md;
+}
+.sm {
+  font-size: $font-xs;
+}

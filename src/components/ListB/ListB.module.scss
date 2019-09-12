@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.ListB {
+  text-align: center;
+  background-color: $grey-light;
+  border-radius: $border-radius-default;
+  padding: .5rem 2rem;
+  & > :first-child {
+    padding-left: .5rem;
+  }
+  & > *:not(:last-child) {
+    margin-right: .5rem;
+    padding-right: .5rem;
+  
+    
+  }
+}
+
+
+.black {
+  margin: 0 auto;
+  & > :first-child {
+    padding-left: 1rem;
+  }
+  & > :not(:last-child) {
+    border-right: 1px solid $black;
+  }
+}

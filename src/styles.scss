@@ -1,0 +1,42 @@
+@import "variables.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(desk-big) {
+    font-size: 80%;
+  }
+  @include respond(tab-land) {
+    font-size: 70%;
+  }
+  @include respond(tab-port) {
+    font-size: 60%;
+  }
+  @include respond(phone) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $white;
+}

@@ -1,0 +1,51 @@
+@import "../../variables.scss";
+
+.Post {
+  width: 100%;
+  border-radius: $border-radius-default;
+  border: 1px solid $green;  
+}
+.post__header {
+  font-weight: $font-weight-md;
+  color: $white;
+  padding: .5rem 1.5rem;
+  background-color: $green;
+}
+.post__form {
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  width: 90%;
+  @include clear-fix;
+}
+.post__label {
+  margin-bottom: .2rem;
+  line-height: $line-height-sm;
+  font-weight: $font-weight-md;
+  font-size: $font-sm;
+  display: block;
+}
+.post__input {
+  padding: 0 .5rem;
+  height: 2.5rem;
+ border: 1px solid rgba($black, .3);
+ display: block;
+ width: 100%;
+ margin-bottom: 1.5rem;
+ resize: none;
+}
+
+.post__input__textarea {
+  height: 8rem;
+ }
+ 
+
+
+.post__button {
+  cursor: pointer;
+  float: right;
+  border: none;
+  border-radius: 2px;
+  padding: .5rem 1rem;
+  color: $white;
+  background-color: $color-primary;
+}
